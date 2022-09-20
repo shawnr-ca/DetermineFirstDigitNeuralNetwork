@@ -87,13 +87,10 @@ def PrintResults():
     print("The training arrays are:")
     print(DataSet_Input)
     print(DataSet_Output)
-    print("\n" + "The initial randomly generated weights are:")
-    print(weights0)
-    print("\n" + "The new weights after " + str(UserEpochs) + " epochs are: ")
-    print(weights)
-    print("\n" + "The result for the user input array " + str(User_input) + " is:")
-    print(Output)
-    print("≈" + str(round(float(Output))))
+    print(f"\n The initial randomly generated weights are: {weights0}")
+    print(f"\n The new weights after {str(UserEpochs - 1)} epochs are: {weights}")
+    print(f"\n The result for the user input array {str(User_input)} is: {Output}")
+    print(f"≈ {str(round(float(Output)))}")
 
 PrintResults()
 
